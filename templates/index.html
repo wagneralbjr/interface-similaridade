@@ -4,6 +4,11 @@
 <div class="container">
   <div class="row">
     <div class="col-md-6">
+      <div id="nome_principal">
+        <p> Nome da Empresa Principal
+        </p>
+      </div>
+        <!--
         <table class="table" id="tab_principal">
         <tbody>
         {% for item in lis1%}
@@ -15,6 +20,8 @@
         {% endfor %}
           
         </tbody>
+        -->
+
         </table>
     </div>
 
@@ -22,17 +29,15 @@
     <div class="col-md-6">
 
       <table class="table" id="tab_secundaria">
-        <tbody>
-        {% for item in lis2%}
-        <tr>
-          <td>{{loop.index}}</td>
-          <td>{{item[0]}}</td>
-          <td>{{item[1]}}</td>
-        </tr>
-        {% endfor %}
-        </tbody>
-    </table>
+        
+      </table>
     </div>
+  </div>
+
+  <div class="row">
+
+    <p> Pressione Enter para confirmar.</p>
+
   </div>
 </div>
 
@@ -53,4 +58,4 @@
 
 <link rel="stylesheet" href="/static/style.css">
 
-<script src="/static/codigos.js"></script>
+<script src="/static/codigos2.js"></script>

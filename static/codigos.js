@@ -35,7 +35,7 @@ function mudaAtiva(ativo, proximo_aux, id_tabela){
 
 $(document).keypress(function(event) {
 
-
+    //console.log(event);
     console.log('Handler for .keypress() called. - ' + event.charCode);
     let codigoLetra = event.charCode;
     //encontra qual está ativo.
@@ -70,6 +70,10 @@ $(document).keypress(function(event) {
     //A 97
     if (codigoLetra == 97){
         aba_tabela = (aba_tabela+1)%2;
+    }
+
+    if(event.originalEvent.code == "Enter"){
+        console.log('apertou enter');
     }
 
 });

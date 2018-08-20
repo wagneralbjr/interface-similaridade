@@ -9,6 +9,18 @@ class Database():
         self.cursor = self.conn.cursor()
 
 
+    def execute(self, sql):
+
+        self.cursor.execute(sql)
+
+        return 
+
+    def fetchall(self, sql):
+
+        return self.cursor.fetchall()
+
+
+
     
 
 
